@@ -47,7 +47,7 @@ def response(user_response):
     final_stopwords_list = stopwords.words('french')
     TfidfVec = TfidfVectorizer(
     stop_words=final_stopwords_list,
-    tokenizer=LemNormalize,
+    tokenizer=LemNormalize
     )
     
     #TfidfVec = TfidfVectorizer(tokenizer = LemNormalize, stop_words = 'english')
